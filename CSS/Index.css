@@ -1,3 +1,5 @@
+
+
 #header{
     width: 100%;
     height: 120px;
@@ -24,42 +26,109 @@
     margin-right: 5vw;
 }
 
-#header nav ul{
+#menu{
     display: flex;
     height: fit-content;
     justify-content: space-between;
 }
 
-#header nav ul a{
+#menu a{
     color: black;
     font-weight: 800;
+    text-shadow: 2px 2px 6px;
 }
 
 .home{
     text-decoration: underline;
 }
 
-#dropdownIcon {
-    align-self: flex-end;
-    display: none;
-}
-
-#dropdownIcon img{
-    width: 40px;
-    height: 40px;
-}
+.dropdownMenu{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #checkbox-menu{
+    position: absolute;
+    opacity: 0;
+  }
+  
+  .dropdownMenu label{
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 22px;
+    width: 30px;
+  }
+  
+  .dropdownMenu label span{
+    position: absolute;
+    display: block;
+    height: 5px;
+    width: 100%;
+    border-radius: 30px;
+    background: black;
+    transition: 0.25s ease-in-out;
+  }
+  
+  .dropdownMenu label span:nth-child(1){
+    top: 0;
+  }
+  
+  .dropdownMenu label span:nth-child(2){
+    top: 8px;
+  }
+  
+  .dropdownMenu label span:nth-child(3){
+    top: 16px;
+  }
+  
+  #checkbox-menu:checked + label span:nth-child(1){
+    transform: rotate(-45deg);
+    top: 8px;
+  }
+  
+  #checkbox-menu:checked + label span:nth-child(2){
+    opacity: 0;
+  }
+  
+  #checkbox-menu:checked + label span:nth-child(3){
+    transform: rotate(45deg);
+    top:8px;
+  }
 
 @media only screen and (max-width: 700px){
-    #header nav ul{
-        display: none;
+    #menu{
+        display: flex;
+        visibility: hidden;
+        position: absolute;
+        width: 100%;
+        top:70px;
+        flex-direction: column;
+        height: 0px;
+        background-color: #fafafa;
+        z-index: 1000;
+        overflow: hidden;
+    }
+    #menu li{
+        padding: 20px;
+        border-bottom: 2px solid rgba(0,0,0, .05);
     }
     #header nav{
-        display: flex;
-        flex-direction: column;
-        width: fit-content;
-        top: 40px;
+        top: 50px;
+        margin-right: 2vw;
     }
-    #dropdownIcon{
-        display: block;
+    #nav.active #menu {
+        height: fit-content;
+        visibility: visible;
+    }
+
+}
+
+@media only screen and (min-width: 700px){
+    .dropdownMenu {
+        display: none;
     }
 }
+

@@ -17,15 +17,25 @@
         <a href="Index.html" id="logo">
             <img src="../Assets/logo.png" alt="logo da marca, um bolo">
         </a>
-        <nav>
-            <ul>
+        <nav id='nav'>
+            <ul id="menu">
                 <li><a class="home" href="Index.html"><h3>Inicio</h3></a></li>
                 <li><a class="bolos" href=""><h3>Bolos</h3></a></li>
                 <li><a class="pedidos" href=""><h3>Pedidos</h3></a></li>
                 <li><a class="sobrenos" href=""><h3>Sobre Nós</h3></a></li>
             </ul>
-            <a id="dropdownIcon" href=""><img src="../Assets/dropdownMenu.png" alt="icone do menu dropdown"></a>
+            <div class="dropdownMenu">
+                <input type="checkbox" id="checkbox-menu">
+            
+                <label for="checkbox-menu">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </label>
+             
+              </div>
         </nav>
     </div>
 </body>
+<script src="../Scripts/scripts.js"></script>
 </html>
