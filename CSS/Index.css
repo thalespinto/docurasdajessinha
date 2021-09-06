@@ -3,13 +3,13 @@
     height: 120px;
     background-image: linear-gradient(#FFD371, var(--cor-bolo));
     display: flex;
-    flex-direction: column;
+    justify-content: flex-end;
 }
 
 #logo{
     text-decoration: none;
     align-self: center;
-    
+    margin: 0 auto;
 }
 
 #logo img{
@@ -18,8 +18,8 @@
 }
 
 #header nav{
-    height: fit-content;
-    align-self: flex-end;
+    position: absolute;
+    top: 70px;
     width: 25%;
     margin-right: 5vw;
 }
@@ -33,4 +33,33 @@
 #header nav ul a{
     color: black;
     font-weight: 800;
+}
+
+.home{
+    text-decoration: underline;
+}
+
+#dropdownIcon {
+    align-self: flex-end;
+    display: none;
+}
+
+#dropdownIcon img{
+    width: 40px;
+    height: 40px;
+}
+
+@media only screen and (max-width: 700px){
+    #header nav ul{
+        display: none;
+    }
+    #header nav{
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        top: 40px;
+    }
+    #dropdownIcon{
+        display: block;
+    }
 }
