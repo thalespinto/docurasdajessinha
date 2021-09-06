@@ -1,0 +1,18 @@
+:root{
+    --cor-bolo: #CD853F;
+    font-size: 14px;
+    font-family: "Abhaya Libre", serif;
+}
+h1{
+    font-size: 36px;
+}
+h2{
+    font-size: 24px;
+}
+h3{
+    font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+}
