@@ -1,0 +1,37 @@
+#mainSection {
+    width: 100%;
+    height: clamp(240px, 50vw, 1000px);
+    background-image: url(../Assets/imagem-secao-bolos.jpg);
+    background-size:cover;
+    display: flex;
+    /*align-items: flex-end;
+    justify-content: right;*/
+}
+
+#mainSection .legenda{
+    margin-top: 5vw;
+    margin-left: 10vw;
+}
+
+
+#mainSection div:nth-child(2){
+    display: flex;
+}
+
+#mainSection h2{
+    font-family: 'Aguafina Script', cursive;
+    font-size: clamp(64px, 7vw, 96px);
+}
+
+#mainSection input {
+    background-color: var(--cor-bolo);
+    border: none;
+    border-radius: 15px;
+    font-size: 18px;
+    width: 35%;
+    height: fit-content;
+    padding: 8px 15px;
+    margin-left: 20px;
+    align-self: center;
+    white-space: normal;
+}

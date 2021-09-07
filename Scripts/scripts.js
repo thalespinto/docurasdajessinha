@@ -1,4 +1,6 @@
 $ = document
+
+/*MENU DROPDOWN*/
 const dropdownMenu = $.getElementById('checkbox-menu');
 
 function toggleMenu(){
@@ -8,3 +10,4 @@ function toggleMenu(){
 
 dropdownMenu.addEventListener('click', toggleMenu);
 dropdownMenu.addEventListener('touchstart', toggleMenu);
+
