@@ -89,7 +89,7 @@
 
 .valueCard{
     width: 220px;
-    height: clamp(260px, 20vw, 360px);
+    height: clamp(260px, fit-content, 360px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -97,11 +97,18 @@
     border-radius: 15px;
     margin-bottom: 20px;
     padding: 20px;
+    z-index: 10000;
+    background-color: white;
 }
 
 .valueCard img{
     width: clamp(100px, 12vw, 220px);
     height: clamp(100px, 12vw, 220px);
+}
+
+.valueCard h2{
+    font-family: 'Aguafina Script', cursive;
+    margin-top: 20px;
 }
 
 .valueCard h2,
@@ -119,4 +126,70 @@
 
 #valuesSection .valueCard:last-of-type{
     box-shadow: 5px 10px 10px #FF9CCE;
+}
+
+#aboutUsSection {
+    margin-top: 80px;
+    position: relative;
+}
+
+#aboutUsSection h2{
+    font-family: "Aguafina Script", cursive;
+    color: var(--cor-bolo);
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: clamp(20px, 2vw, 50px);
+}
+
+#aboutUsSection p{
+    font-size: 24px;
+    width: clamp(240px, 60vw, 1400px);
+    margin: 0 auto;
+    text-align: center;     
+}
+
+#aboutUsSection input {
+    padding: 5px 8px;
+    background-color: var(--cor-bolo);
+    border: none;
+    border-radius: 5px;
+    width: clamp(80px, 5vw, 150px);
+    height: clamp(25px, 2vw, 40px);
+}
+
+#aboutUsSection div{
+    width: fit-content;
+    margin: 30px auto;
+}
+
+.pinkBallsTwo{
+    width: clamp(50px, 12vw, 180px);
+    position: absolute;
+    top: -200px;
+}
+
+@media only screen and (max-width: 515px){
+    .pinkBallsTwo{
+        display: none;
+    }
+    .chapeuFesta{
+        display: none;
+    }
+    #valuesSection .valueCard{
+        box-shadow: none;
+    }
+    
+    #valuesSection .valueCard:first-of-type{
+        box-shadow: none;
+    }
+    
+    #valuesSection .valueCard:last-of-type{
+        box-shadow: none;
+    }
+} 
+
+.chapeuFesta {
+    position: absolute;
+    right: clamp(0px, 1vw, 50px);
+    top: 0px;
 }

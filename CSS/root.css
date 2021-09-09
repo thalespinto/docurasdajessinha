@@ -4,12 +4,15 @@
     font-family: "Abhaya Libre", serif;
 }
 h1{
-    font-size: 36px;
+    font-size: 96px;
 }
 h2{
-    font-size: 24px;
+    font-size: 48px;
 }
 h3{
+    font-size: 16px;
+}
+p{
     font-size: 16px;
 }
 
