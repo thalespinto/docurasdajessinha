@@ -1,11 +1,13 @@
+.home{
+    text-decoration: underline;
+}
+
 #mainSection {
     width: 100%;
     height: clamp(240px, 50vw, 1000px);
     background-image: url(../Assets/imagem-secao-bolos.jpg);
     background-size:cover;
     display: flex;
-    /*align-items: flex-end;
-    justify-content: right;*/
 }
 
 #mainSection .legenda{
@@ -23,12 +25,16 @@
     font-size: clamp(64px, 7vw, 96px);
 }
 
+#mainSection a {
+    width: 35%;
+}
+
 #mainSection input {
     background-color: var(--cor-bolo);
     border: none;
     border-radius: 15px;
     font-size: 18px;
-    width: 35%;
+    width: 100%;
     height: fit-content;
     padding: 8px 15px;
     margin-left: 20px;
@@ -46,7 +52,7 @@
     inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
 
-#contactSection {
+.contactSection {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -63,7 +69,7 @@
     cursor: pointer;
 }
 
-#contactSection h3{
+.contactSection h3{
     width: fit-content;
     margin: auto;
 }
@@ -155,6 +161,14 @@
     border-radius: 5px;
     width: clamp(80px, 5vw, 150px);
     height: clamp(25px, 2vw, 40px);
+}
+
+#aboutUsSection input:hover{
+    cursor: pointer;
+}
+
+#aboutUsSection input:active{
+    color: #fafafa;
 }
 
 #aboutUsSection div{

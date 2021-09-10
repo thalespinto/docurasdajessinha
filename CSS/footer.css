@@ -4,6 +4,7 @@ footer{
     background-color: var(--cor-bolo);
     display: flex;
     align-items: center;
+    margin-top: 100px;
 }
 
 footer p{

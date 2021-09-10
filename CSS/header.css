@@ -1,5 +1,3 @@
-
-
 header{
     width: 100%;
     height: 120px;
@@ -42,10 +40,6 @@ header nav{
 
 #menu a:hover h3{
   font-size: 18px;
-}
-
-.home{
-    text-decoration: underline;
 }
 
 .dropdownMenu{
@@ -128,8 +122,15 @@ header nav{
     #nav.active #menu {
         height: fit-content;
         visibility: visible;
+        position: absolute;
+        right: 0px;
     }
-
+    #pageBolos header #nav.active #menu{
+      width: fit-content;
+      position: absolute;
+      right: 0px;
+      top: 120px;
+    }
 }
 
 @media only screen and (min-width: 700px){
@@ -138,3 +139,42 @@ header nav{
     }
 }
 
+
+/*HEADER DA PAGINA BOLOS*/
+#pageBolos header{
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#pageBolos header #redes img{    
+  width: 40px;
+  height: 40px;
+}
+
+#pageBolos header #redes a:last-child{
+  background-color: #fafafa;
+  border-radius: 50%;
+}
+
+#pageBolos header #redes{
+  width: clamp(120px, 15%, 160px);
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: flex-end;
+  margin-left: 10%;
+}
+
+#pageBolos header nav{
+  position: unset;
+}
+
+#pageBolos #logo {
+  position: absolute;
+  left: 50%;
+}
+
+#pageBolos .bolos {
+  text-decoration: underline;
+}

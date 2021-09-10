@@ -1,0 +1,50 @@
+#pageSobreNos .sobrenos{
+    text-decoration: underline;
+}
+
+#pageSobreNos .mainSection{
+    width: 100%;
+    max-width: 1000px;
+    margin: 100px auto 50px auto;
+}
+
+#pageSobreNos .mainSection h2{
+    font-family: "Aguafina Script", cursive;
+    color: var(--cor-bolo);
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: clamp(20px, 2vw, 50px);
+}
+
+#pageSobreNos .mainSection p{
+    font-size: 24px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center; 
+}
+
+.contactSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: clamp(35px, 5vw, 50px) auto;
+    /*position: relative;*/
+}
+
+.contactIcon img{
+    width: clamp(100px, 12vw, 200px);
+    height: clamp(100px, 12vw, 200px);
+}
+
+.contactIcon img:hover{
+    cursor: pointer;
+}
+
+.contactSection h3{
+    width: fit-content;
+    margin: auto;
+}
+
+.contactSection .pinkBallsOne{
+    display: none;
+}
